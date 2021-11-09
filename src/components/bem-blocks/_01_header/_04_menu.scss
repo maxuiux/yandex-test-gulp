@@ -1,0 +1,16 @@
+/* -menu */
+
+.menu {
+    &__list {
+        @include dFlex;
+        &-item {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        &-link {
+            @include fontSize15;
+        }
+    }
+}
+
+/* #menu */

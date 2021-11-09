@@ -1,0 +1,16 @@
+/* -footer */
+
+.footer {
+    @include fontSize12;
+    font-weight: 900;
+    padding: 56px;
+    background-color: $grey;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+/* #footer */

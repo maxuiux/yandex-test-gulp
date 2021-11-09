@@ -1,0 +1,98 @@
+/* -download-app */
+
+.download-app {
+    padding-top: 128px;
+    padding-bottom: 180px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 1106px;
+        height: 100%;
+        background-image: url(../../../images/download-app-01.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+        z-index: $z-index-minus-1;
+    }
+
+    &__inner {
+        max-width: 455px;
+        width: 100%;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        @include fontSize31;
+        font-weight: 500;
+        margin-bottom: 48px;
+    }
+
+    &__form {
+        &-phone {
+            max-width: 197px;
+            width: 100%;
+            height: 49px;
+            @include fontSize19;
+            font-weight: 500;
+            letter-spacing: 1.2px;
+            border: 1px solid $grey-1;
+            padding-left: 32px;
+            padding-right: 17px;
+            transition: border $transition-1;
+
+            &::placeholder {
+                color: $grey-2;
+            }
+
+            &:focus,
+            &:active {
+                border-width: 2px;
+                border-color: $yello;
+            }
+        }
+
+        &-label {
+            position: relative;
+            margin-right: 15px;
+
+            span {
+                display: block;
+                height: 26px;
+                position: absolute;
+                top: 50%;
+                left: 12px;
+                transform: translateY(-50%);
+                z-index: $z-index-1;
+                pointer-events: none;
+            }
+        }
+
+        &-submit {
+            @include no-btn;
+            @include fontSize19;
+            font-weight: 500;
+            padding: 0 15px;
+            max-width: 130px;
+            width: 100%;
+            min-height: 49px;
+            background-color: $yello;
+            border-radius: $border-radius-6;
+            transition: background-color $transition-2;
+        }
+
+        &-submit:hover,
+        &-submit:focus {
+            background-color: $yello-1;
+        }
+    }
+}
+
+/* #download-app */

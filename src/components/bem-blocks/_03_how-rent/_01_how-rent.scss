@@ -1,0 +1,58 @@
+/* -how-rent */
+
+.how-rent {
+    padding-top: 32px;
+    background-color: $yello;
+
+    &__title {
+        margin-bottom: 96px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 180px;
+    }
+
+    &__items {
+        flex-basis: 50%;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 94px;
+    }
+
+    &__item:last-child {
+        position: relative;
+    }
+
+    &__item {
+        &-img {
+            margin-bottom: 32px;
+        }
+
+        &-title {
+            @include fontSize35;
+        }
+
+        &-svg {
+            width: 345px;
+            height: 357px;
+            position: absolute;
+            top: 52px;
+            right: -271px;
+            z-index: $z-index-1;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: $white;
+        background: $black;
+        border-radius: $border-radius-56;
+        @include fontSize39;
+        padding: 43px 64px 50px;
+    }
+}
+
+/* #how-rent */

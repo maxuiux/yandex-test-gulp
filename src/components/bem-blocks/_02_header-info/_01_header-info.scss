@@ -1,0 +1,56 @@
+/* -header-info */
+
+.header-info {
+    padding-top: 72px;
+    padding-bottom: 140px;
+
+    &__img {
+        width: 100%;
+        height: auto;
+        display: block;
+        pointer-events: none;
+    }
+
+    &__wrapper {
+        max-width: 500px;
+        width: 100%;
+        margin-top: -97px;
+        margin-bottom: 82px;
+    }
+
+    &__title {
+        @include fontSize35;
+        margin-bottom: 32px;
+    }
+
+    &__btn {
+        @include fontSize23;
+        padding: 26px 62px;
+        border-radius: $border-radius-24;
+    }
+
+    &__subtitle {
+        max-width: 670px;
+        width: 100%;
+        color: $white;
+        @include fontSize63;
+        position: relative;
+
+        a {
+            color: $white;
+            text-decoration: underline;
+        }
+        
+        &-img {
+            position: absolute;
+            top: -40px;
+            right: -136px;
+            width: 782px;
+            height: 228px;
+            z-index: $z-index-0;
+            pointer-events: none;
+        }
+    }
+}
+
+/* #header-info */

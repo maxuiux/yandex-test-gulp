@@ -1,0 +1,55 @@
+/* -custom styles */
+
+/* -position */
+
+.rel {
+    position: relative;
+}
+
+.order-reverse {
+    flex-direction: column-reverse;
+}
+
+/* #position */
+
+/* -text (title, subtitle ...)*/
+
+.title {
+    @include fontSize63;
+}
+
+/* #text (title, subtitle ...)*/
+
+/* -container */
+
+// container 1140px
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 17px;
+}
+
+// container 954px
+.container-lg {
+    max-width: 954px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 17px;
+}
+
+/* #container */
+
+/* -column */
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+/* #column */
+
+/* #custom styles */

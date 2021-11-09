@@ -1,0 +1,39 @@
+/* -where-there */
+
+.where-there {
+    background-color: transparent;
+    margin-top: -80px;
+    position: relative;
+    z-index: $z-index-1;
+
+    &__inner {
+        padding-top: 128px;
+        border-top-left-radius: $border-radius-56;
+        border-top-right-radius: $border-radius-56;
+        overflow: hidden;
+        background-color: $white;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        @include fontSize31;
+        font-weight: 500;
+        margin-bottom: 72px;
+    }
+
+    &__map {
+        border-radius: $border-radius-56;
+        overflow: hidden;
+
+        &-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+
+/* #where-there */
